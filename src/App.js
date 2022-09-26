@@ -1,8 +1,25 @@
+import { BrowserRouter as Router,Routes,Route } from "react-router-dom";
+import Explore from "./pages/Explore";
+import ForgotPassword from "./pages/ForgotPassword";
+import Profile from "./pages/Profile";
+import Offers from "./pages/Offers";
+import Signin from "./pages/Signin";
+import Signup from "./pages/Signup";
+
 
 function App() {
   return (
-    <div className="App">
-      <h1>Srujan-here</h1>
+    <div>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Explore />} />
+          <Route path="/sru" element={<Profile />} />
+
+        </Routes>
+      </Router>
+    
+
+      
     </div>
   )
 }
