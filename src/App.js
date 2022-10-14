@@ -5,12 +5,15 @@ import Profile from "./pages/Profile";
 import Offers from "./pages/Offers";
 import Signin from "./pages/Signin";
 import Signup from "./pages/Signup";
+import Navbar from "./components/Navbar";
 
 
 function App() {
   return (
     <div>
       <Router>
+      <Navbar />
+
         <Routes>
           <Route path="/" element={<Explore />} />
           <Route path="/offers" element={<Offers />} />
